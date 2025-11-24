@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:oxyid/components/component.dart';
 import 'package:oxyid/extensions/extension.dart';
@@ -11,6 +10,7 @@ class HistoryPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.amberAccent[200],
       appBar: AppBar(
         leadingWidth: 80,
         leading: IconButton.filledTonal(
@@ -40,7 +40,7 @@ class HistoryPage extends StatelessWidget {
                 width: double.infinity,
                 menuStyle: MenuStyle(
                   backgroundColor: WidgetStatePropertyAll(
-                    Theme.of(context).scaffoldBackgroundColor,
+                    Theme.of(context).primaryColor,
                   ),
                 ),
                 inputDecorationTheme: InputDecorationTheme(
@@ -69,26 +69,112 @@ class HistoryPage extends StatelessWidget {
                 ),
                 dropdownMenuEntries: [
                   const DropdownMenuEntry(value: 'all', label: 'all'),
-                  const DropdownMenuEntry(value: 'daily high', label: 'daily high'),
-                  const DropdownMenuEntry(value: 'daily low', label: 'daily low'),
+                  const DropdownMenuEntry(
+                    value: 'daily high',
+                    label: 'daily high',
+                  ),
+                  const DropdownMenuEntry(
+                    value: 'daily low',
+                    label: 'daily low',
+                  ),
                 ],
               ),
             ),
-            SizedBox(height: context.hp(1)),
+            SizedBox(height: context.hp(4)),
             Flexible(
-              child: ListView.builder(
-                scrollDirection: Axis.vertical,
-                physics: const BouncingScrollPhysics(),
-                itemCount: items.length,
-                itemBuilder: (context, index) {
-                  // final item = _filteredTrends[index];
-                  return HistoryItem(
-                    
-                    titleText: items[index],
-                    subtitleText: items[index],
-                    
-                  );
-                },
+              child: ListView(
+                children: [
+                  ListTile(
+                    title: Text("hello"),
+                    subtitle: Text('im adeola'),
+                    tileColor: Colors.deepPurpleAccent[100],
+                  ),
+                  ListTile(
+                    title: Text("hello"),
+                    subtitle: Text('im oxygen'),
+                    tileColor: Colors.deepPurpleAccent[100],
+                  ),
+                  ListTile(
+                    title: Text("hello"),
+                    subtitle: Text('im oxygen'),
+                    tileColor: Colors.deepPurpleAccent[100],
+                  ),
+                  ListTile(
+                    title: Text("hello"),
+                    subtitle: Text('im oxygen'),
+                    tileColor: Colors.deepPurpleAccent[100],
+                  ),
+                  ListTile(
+                    title: Text("hello"),
+                    subtitle: Text('im oxygen'),
+                    tileColor: Colors.deepPurpleAccent[100],
+                  ),
+                  ListTile(
+                    title: Text("hello"),
+                    subtitle: Text('im oxygen'),
+                    tileColor: Colors.deepPurpleAccent[100],
+                  ),
+                  ListTile(
+                    title: Text("hello"),
+                    subtitle: Text('im oxygen'),
+                    tileColor: Colors.deepPurpleAccent[100],
+                  ),
+                  ListTile(
+                    title: Text("hello"),
+                    subtitle: Text('im oxygen'),
+                    tileColor: Colors.deepPurpleAccent[100],
+                  ),
+                  ListTile(
+                    title: Text("hello"),
+                    subtitle: Text('im oxygen'),
+                    tileColor: Colors.deepPurpleAccent[100],
+                  ),
+                  ListTile(
+                    title: Text("hello"),
+                    subtitle: Text('im oxygen'),
+                    tileColor: Colors.deepPurpleAccent[100],
+                  ),
+                  ListTile(
+                    title: Text("hello"),
+                    subtitle: Text('im oxygen'),
+                    tileColor: Colors.deepPurpleAccent[100],
+                  ),
+                  ListTile(
+                    title: Text("hello"),
+                    subtitle: Text('im oxygen'),
+                    tileColor: Colors.deepPurpleAccent[100],
+                  ),
+                  ListTile(
+                    title: Text("hello"),
+                    subtitle: Text('im oxygen'),
+                    tileColor: Colors.deepPurpleAccent[100],
+                  ),
+                  ListTile(
+                    title: Text("hello"),
+                    subtitle: Text('im oxygen'),
+                    tileColor: Colors.deepPurpleAccent[100],
+                  ),
+                  ListTile(
+                    title: Text("hello"),
+                    subtitle: Text('im oxygen'),
+                    tileColor: Colors.deepPurpleAccent[100],
+                  ),
+                  ListTile(
+                    title: Text("hello"),
+                    subtitle: Text('im oxygen'),
+                    tileColor: Colors.deepPurpleAccent[100],
+                  ),
+                  ListTile(
+                    title: Text("hello"),
+                    subtitle: Text('im oxygen'),
+                    tileColor: Colors.deepPurpleAccent[100],
+                  ),
+                  ListTile(
+                    title: Text("hello"),
+                    subtitle: Text('im oxygen'),
+                    tileColor: Colors.deepPurpleAccent[100],
+                  ),
+                ],
               ),
             ),
           ],
