@@ -18,6 +18,6 @@ Color getRandomColor() {
   final int red = random.nextInt(256);
   final int green = random.nextInt(256);
   final int blue = random.nextInt(256);
-  final Color color = Color.fromARGB(255, red, green, blue);
+  final Color color = Color.fromARGB(199, red, green, blue);
   return color;
 }

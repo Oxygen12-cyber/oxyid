@@ -1,0 +1,17 @@
+final List<String> items = [
+  'apple',
+  'ball',
+  'cat',
+  'gate',
+  'phone',
+  'love',
+  'game',
+  'switch',
+  'back',
+  'powebank',
+  'night',
+  'cart',
+  'shopping',
+  'olotu',
+  'dami',
+];
