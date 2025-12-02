@@ -23,8 +23,8 @@ Future<void> main() async {
     anonKey:
         'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdpaG5teWVpbnJzc3RjZGdyamRjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQ0NTA1MDEsImV4cCI6MjA4MDAyNjUwMX0.Mg-fc6bqBr8wTBz6GmIKqsdcyAH3bY41bWFJD6uOdqQ',
   );
-  runApp(MyApp());
-  // runApp(DevicePreview(builder: (context) => MyApp()));
+  // runApp(MyApp());
+  runApp(DevicePreview(builder: (context) => MyApp()));
 }
 
 class MyApp extends StatelessWidget {

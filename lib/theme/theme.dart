@@ -8,6 +8,7 @@ final ThemeData lighttheme = ThemeData(
     backgroundColor: Color(0xffeff3f6),
   ),
   scaffoldBackgroundColor: const Color(0xffeff3f6),
+  primaryColor: Colors.amberAccent[400],
   fontFamily: GoogleFonts.lato().fontFamily,
 );
 

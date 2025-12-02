@@ -74,20 +74,17 @@ class HistoryItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.symmetric(vertical: 5),
-      child: ListTile(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(32)),
-        tileColor: Colors.deepPurple[200],
-        isThreeLine: true,
-        contentPadding: EdgeInsets.symmetric(horizontal: 4, vertical: 0),
-        leading: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15.0),
-          child: Icon(Iconsax.scanning, size: 32),
-        ),
-        title: Text(titleText),
-        subtitle: Text(subtitleText),
+    return ListTile(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(32)),
+      tileColor: Colors.deepPurple[200],
+      isThreeLine: true,
+      contentPadding: EdgeInsets.symmetric(horizontal: 4, vertical: 0),
+      leading: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15.0),
+        child: Icon(Iconsax.scanning, size: 32),
       ),
+      title: Text(titleText),
+      subtitle: Text(subtitleText),
     );
   }
 }
