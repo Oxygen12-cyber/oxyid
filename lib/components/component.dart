@@ -195,9 +195,9 @@ class CustomDialog extends StatelessWidget {
                   );
                 },
                 child: Text(
-                  'Generate ID.',
+                  'Generate ID',
                   style: GoogleFonts.poppins(
-                    fontSize: 16,
+                    fontSize: 14,
                     fontWeight: FontWeight.bold,
                     color: Theme.of(context).colorScheme.inversePrimary,
                   ),

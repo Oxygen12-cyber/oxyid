@@ -20,7 +20,7 @@ class SettingsPage extends StatelessWidget {
         leading: IconButton.filledTonal(
           onPressed: () => Navigator.pop(context),
           padding: EdgeInsets.all(15),
-          iconSize: 28,
+          iconSize: 20,
           icon: Icon(Iconsax.arrow_left_2_copy, color: Colors.white),
           style: IconButton.styleFrom(
             backgroundColor: Theme.of(
@@ -62,8 +62,7 @@ class SettingsPage extends StatelessWidget {
               showTopSnackBar(
                 Overlay.of(context),
                 CustomSnackBar.error(
-                  message:
-                      "${err.message}\n Timeout:\n Please retry Later.",
+                  message: "${err.message}\n Timeout:\n Please retry Later.",
                 ),
               );
             } catch (err) {

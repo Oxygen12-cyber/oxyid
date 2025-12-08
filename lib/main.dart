@@ -52,7 +52,7 @@ class MyApp extends StatelessWidget {
         '/adminPage': (context) => AdminHomePage(),
         '/emptyPage': (context) => EmptyPage(),
       },
-      home: const AdminHomePage(),
+      home: const AuthGate(),
     );
   }
 }
